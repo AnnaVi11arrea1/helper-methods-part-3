@@ -55,6 +55,6 @@ class MoviesController < ApplicationController
   private # little methods for bigger methods
   
   def movie_params
-    params.require(:movie).permit(:title, :description, :image_url, :director_id) # whitelist items once in this method
+    params.require(:movie).permit(:title, :description, :image_url, :director_id, :released_on) # whitelist items once in this method
   end
 end
